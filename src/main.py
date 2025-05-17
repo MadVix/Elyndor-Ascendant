@@ -27,6 +27,8 @@ INFO
 """
 
 # imports
+from dotenv import load_dotenv
+import os
 import discord
 import random
 from discord.ext.commands import Bot
@@ -36,6 +38,7 @@ from time import sleep
 # check img url
 import requests, asyncio
 
+load_dotenv()
 
 # init discord stuff and json handling
 BOT_PREFIX = ("+")  # tupple in case we'd need multiple
